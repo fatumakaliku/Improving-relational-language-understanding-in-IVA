@@ -1,0 +1,87 @@
+version: "3.1"
+
+stories:
+
+  # Greeting
+  - story: Greet conversation
+    steps:
+    - intent: greet
+    - action: utter_greet
+
+  # Thanks
+  - story: Thank you
+    steps:
+    - intent: thanks
+    - action: utter_thanks
+
+  # Goodbye
+  - story: Goodbye conversation
+    steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+  # Affirm
+  - story: Affirmative response
+    steps:
+    - intent: affirm
+    - action: utter_affirm
+
+  # Deny
+  - story: Denying assistance
+    steps:
+    - intent: deny
+    - action: utter_deny
+
+  # Great Mood
+  - story: Positive mood
+    steps:
+    - intent: mood_great
+    - action: utter_mood_great
+
+  # Unhappy Mood
+  - story: Negative mood
+    steps:
+    - intent: mood_unhappy
+    - action: utter_mood_unhappy
+
+  # Bot Challenge
+  - story: Bot challenge
+    steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+
+  # Flight Information
+  - story: Request for flight information
+    steps:
+    - intent: flight_information
+    - action: utter_flight_information
+
+  # Fare Announcement
+  - story: Announcement of fare deals
+    steps:
+    - intent: fare_announcement
+    - action: utter_fare_announcement
+
+  # Flight Booking
+  - story: Flight booking inquiry
+    steps:
+    - intent: flight_booking
+    # Add actions to initiate flight booking process
+
+  # Urgent Assistance
+  - story: Request for urgent assistance
+    steps:
+    - intent: urgent_assistance
+    - action: utter_urgent_assistance
+
+  # Flight Delay
+  - story: Inform about flight delay
+    steps:
+    - intent: flight_delay
+    - action: utter_flight_delay
+
+  # Apology
+  - story: Apologize for misunderstanding
+    steps:
+    - intent: apology
+    - action: utter_apology

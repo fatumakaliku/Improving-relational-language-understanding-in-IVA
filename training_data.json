@@ -1,0 +1,43 @@
+
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "I want to fly from New York to London",
+        "intent": "flight_booking",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "New York",
+            "entity": "from_location"
+          },
+          {
+            "start": 32,
+            "end": 38,
+            "value": "London",
+            "entity": "to_location"
+          }
+        ]
+      },
+      {
+        "text": "Book a table for two at the Italian restaurant",
+        "intent": "restaurant_booking",
+        "entities": [
+          {
+            "start": 23,
+            "end": 29,
+            "value": "two",
+            "entity": "number_of_guests"
+          },
+          {
+            "start": 34,
+            "end": 48,
+            "value": "Italian",
+            "entity": "cuisine"
+          }
+        ]
+      }
+    ]
+  }
+}
